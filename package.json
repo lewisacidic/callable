@@ -1,5 +1,5 @@
 {
-  "name": "@richlewis/callable",
+  "name": "@richlewis42/callable",
   "version": "0.0.1",
   "description": "Callable instances for JS",
   "main": "dist/callable.cjs.js",
