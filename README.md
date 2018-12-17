@@ -1,4 +1,4 @@
-# @richlewis/callable
+# @richlewis42/callable [![npm-version][npm-badge]][npm-link]
 
 Callable instances for JS, in under 10 lines of ES6!
 
@@ -123,3 +123,6 @@ Other libraries that present similar functionality:
 ## License
 
 [MIT](https://opensource.org/licenses/mit) @ [Rich Lewis](https://richlew.is/)
+
+[npm-badge]: https://img.shields.io/npm/v/@richlewis42/callable.svg?style=flat-square
+[npm-link]: http://www.npmjs.com/package/@richlewis42/callable
