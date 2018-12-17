@@ -119,6 +119,9 @@ This function gets the prototype and member properties from the `this` object, a
 Other libraries that present similar functionality:
 
 - [callable-instance](https://www.npmjs.com/package/callable-instance)
+- [callable-object](https://www.npmjs.com/package/callable-object)
+- [callable-class](https://www.npmjs.com/package/callable-class)
+- [putil-callable](https://www.npmjs.com/package/putil-callable)
 
 ## License
 
