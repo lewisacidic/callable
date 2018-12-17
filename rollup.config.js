@@ -8,7 +8,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      name: 'countdown',
+      name: 'callable',
       file: pkg.browser,
       format: 'umd'
     },
@@ -23,7 +23,6 @@ export default [
   },
   {
     input: 'src/index.js',
-    external: ['lodash'],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }

@@ -1,14 +1,14 @@
 {
-  "name": "rollup-starter",
+  "name": "@richlewis/callable",
   "version": "0.0.1",
-  "description": "Starter javascript package using rollup",
-  "main": "dist/countdown.cjs.js",
-  "module": "dist/countdown.esm.js",
-  "browser": "dist/countdown.umd.js",
+  "description": "Callable instances for JS",
+  "main": "dist/callable.cjs.js",
+  "module": "dist/callable.esm.js",
+  "browser": "dist/callable.umd.js",
   "files": [
     "dist"
   ],
-  "repository": "github:richlewis42/rollup-starter",
+  "repository": "github:richlewis42/callable",
   "author": {
     "name": "Rich Lewis",
     "email": "contact@richlew.is",
@@ -16,33 +16,33 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.1.5",
-    "lodash": "^4.17.11"
+    "@babel/runtime": "^7.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "commitlint": "^7.2.1",
-    "eslint": "^5.9.0",
+    "eslint": "^5.10.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
-    "husky": "^1.1.4",
+    "husky": "^1.2.1",
     "jest": "^23.6.0",
     "jest-html-reporter": "^2.4.2",
     "jest-junit": "^5.2.0",
-    "lint-staged": "^8.0.4",
-    "prettier": "^1.15.2",
-    "rollup": "^0.67.1",
-    "rollup-plugin-babel": "^4.0.3",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.68.0",
+    "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^3.4.0"
+    "rollup-plugin-node-resolve": "^4.0.0"
   },
   "scripts": {
     "build": "rollup -c",
@@ -50,6 +50,6 @@
     "test": "jest",
     "lint": "eslint .",
     "format": "yarn lint --fix",
-    "precommit": "lint-staged"
+    "clean": "rimraf dist reports yarn-error.log"
   }
 }
