@@ -16,9 +16,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.2.0",
-    "core-js": "^2.6.0",
-    "rollup-plugin-terser": "^3.0.0"
+    "@babel/runtime": "^7.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -44,7 +42,8 @@
     "rollup": "^0.68.0",
     "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0"
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-terser": "^3.0.0"
   },
   "scripts": {
     "build": "rollup -c",
