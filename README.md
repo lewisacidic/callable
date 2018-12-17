@@ -1,4 +1,4 @@
-# @richlewis/callable
+<div style="background: red;">@richlewis/callable</div>
 
 Callable instances for JS, in under 10 lines of ES6!
 
