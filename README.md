@@ -122,4 +122,4 @@ Other libraries that present similar functionality:
 
 ## License
 
-[MIT][https://opensource.org/licenses/mit] @ [Rich Lewis][https://richlew.is/]
+[MIT](https://opensource.org/licenses/mit) @ [Rich Lewis](https://richlew.is/)
