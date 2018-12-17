@@ -1,6 +1,6 @@
 {
   "name": "@richlewis42/callable",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Callable instances for JS",
   "main": "dist/callable.cjs.js",
   "module": "dist/callable.esm.js",
@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.2.0",
+    "core-js": "^2.6.0",
     "rollup-plugin-terser": "^3.0.0"
   },
   "devDependencies": {
