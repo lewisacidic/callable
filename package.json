@@ -1,6 +1,6 @@
 {
   "name": "@richlewis42/callable",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Callable instances for JS",
   "main": "dist/callable.cjs.js",
   "module": "dist/callable.esm.js",
