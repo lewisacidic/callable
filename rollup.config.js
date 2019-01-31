@@ -1,7 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
-import { terser } from 'rollup-plugin-terser'
+import { uglify } from 'rollup-plugin-uglify'
 
 import pkg from './package.json'
 
@@ -11,13 +11,17 @@ const production = !(
 
 const args = {
   input: 'src/index.js',
+  output: [
+    { file: pkg.module, format: 'es', sourcemap: true },
+    { file: pkg.main, format: 'cjs', sourcemap: true }
+  ],
   external: id => /^(@babel\/runtime|core-js)/.test(id),
   plugins: [
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true
     }),
-    production && terser()
+    production && uglify()
   ]
 }
 
@@ -36,7 +40,7 @@ export default [
       }),
       resolve(),
       commonjs(),
-      production && terser()
+      production && uglify()
     ]
   },
   {

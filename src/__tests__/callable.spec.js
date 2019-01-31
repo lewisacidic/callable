@@ -1,4 +1,4 @@
-import Callable from '../callable'
+import Callable, { call } from '../callable'
 
 describe('Callable', () => {
   it('should export a constructor function', () => {
@@ -49,7 +49,7 @@ describe('Callable', () => {
 
   it(subclass('whose instances are callable'), () => {
     class Test extends Callable {
-      __call__() {
+      [call]() {
         return 'testvalue'
       }
     }
@@ -59,7 +59,7 @@ describe('Callable', () => {
 
   it(subclass("whose instances' callable function takes arguments"), () => {
     class Test extends Callable {
-      __call__(e, s, t) {
+      [call](e, s, t) {
         return [t, e, s, t]
       }
     }
@@ -81,11 +81,10 @@ describe('Callable', () => {
 
   it('should have subclasses whose call function can access its properties', () => {
     class Test extends Callable {
-      test = 'testvalue'
-
-      __call__() {
+      [call]() {
         return this.test
       }
+      test = 'testvalue'
     }
     expect(new Test()()).toEqual('testvalue')
   })
@@ -96,7 +95,7 @@ describe('Callable', () => {
         super()
         this.test = test
       }
-      __call__() {
+      [call]() {
         return this.test
       }
     }
