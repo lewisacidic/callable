@@ -1,6 +1,6 @@
 {
   "name": "@richlewis42/callable",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Callable instances for JS",
   "main": "dist/callable.cjs.js",
   "module": "dist/callable.esm.js",
@@ -43,7 +43,7 @@
     "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-uglify": "^6.0.2"
+    "rollup-plugin-terser": "^4.0.3"
   },
   "scripts": {
     "build": "rollup -c",
